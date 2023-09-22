@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Registration Form | CodingLab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .admission-main {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            background: linear-gradient(135deg, #1a1a1a, #333); /* Dark background gradient */
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .admission-main>h1 {
+            font-size: 4vw;
+            color: #fff;
+        }
+
+        .admission-main>a {
+            border: 1px solid #fff;
+            margin-top: 2vw;
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(135deg, #1a1a1a, #333); /* Dark button gradient */
+            border-radius: 8px;
+            font-size: 1.5vw;
+            padding: 0.6vw 1.3vw;
+        }
+
+        .admission-main>a:hover {
+            box-shadow: 0 0 10px 0.1px #9b59b6;
+            animation: hoverani;
+            animation-fill-mode: forwards;
+            animation-duration: 0.4s;
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes hoverani {
+            from {
+                padding: 0.6vw 1.3vw;
+            }
+
+            to {
+                padding: 0.6vw 2.8vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="admission-main">
+    <h1>This is our Home Page</h1>
+    <a href="/login">Login Here</a>
+</div>
+</body>
+</html>
